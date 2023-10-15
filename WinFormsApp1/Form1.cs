@@ -22,9 +22,9 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             Polib my = new Polib();
-            string my_polib = "";
-            my_polib = my.coding_eng(textBox1.Text.ToUpper());
+            string my_polib = my.coding_eng(textBox1.Text.ToUpper());
             textBox2.Text = my_polib;
 
             my_polib = my.decoding_eng(textBox1.Text.ToUpper());
@@ -35,12 +35,16 @@ namespace WinFormsApp1
         {
             OSB my_osb = new OSB();
             textBox3.Text = (my_osb.coding_eng(textBox1.Text.ToUpper())).ToString();
-            string my_osb_new = "";
-            my_osb_new = my_osb.decoding_eng(textBox3.Text);
+            string my_osb_new = my_osb.decoding_eng(textBox3.Text);
             textBox5.Text = my_osb_new;
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

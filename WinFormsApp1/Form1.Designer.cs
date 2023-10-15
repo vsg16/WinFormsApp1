@@ -64,6 +64,7 @@
             textBox1.RightToLeft = RightToLeft.No;
             textBox1.Size = new Size(302, 36);
             textBox1.TabIndex = 3;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label1
             // 
@@ -218,7 +219,6 @@
             Name = "Form1";
             Text = "Шифрование алгоритмами: Квадрат Полибия, одноразовый шифровальный блокнот (ОШБ)";
             Load += Form1_Load;
-            //KeyDown += Form1_KeyDown;
             ResumeLayout(false);
             PerformLayout();
         }
